@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>:nth-child & :nth-of-type</title>
+    <meta charset="utf-8">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #000;
+        font-size: 2rem;
+      }
+
+      #mixed-circles,
+      #circles {
+        width: 50vmax;
+        margin: 30vmax auto 0;
+        list-style: none;
+      }
+
+      #mixed-circles em,
+      #mixed-circles strong,
+      #circles li {
+        background: rgb(255, 255, 0);
+        border-radius: 50%;
+        float: left;
+
+        text-align: center;
+        line-height: 10vmax;
+        
+        height: 10vmax;
+        width: 10vmax;
+      }
+
+      #circles :nth-child() {
+        background: rgb(0, 255, 255);
+      }
+
+/*      #circles { display: none; }*/
+      #mixed-circles { display: none; }
+
+      #mixed-circles em:nth-of-type() {
+        background: rgb(0, 255, 255);
+      }
+    </style>
+  </head>
+
+  <body>
+    <ol id="circles">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+    </ol>
+
+    <div id="mixed-circles">
+      <em>A</em><strong>B</strong>
+      <em>C</em><strong>D</strong>
+      <em>E</em><strong>F</strong>
+      <em>G</em><strong>H</strong>
+      <em>I</em><strong>J</strong>
+      <em>K</em><strong>L</strong>
+      <em>M</em><strong>N</strong>
+      <em>O</em><strong>P</strong>
+      <em>Q</em><strong>R</strong>
+      <em>S</em><strong>T</strong>
+    </div>
+  </body>
+</html>

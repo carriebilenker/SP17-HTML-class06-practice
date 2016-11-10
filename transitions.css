@@ -1,0 +1,51 @@
+html { font: normal normal 16px/1.2 courier, monospace; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: #000;
+  color: rgb(255, 0, 255);
+}
+
+#example {
+  background: rgb(0, 255, 255);
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+
+/*  height: 10vmin;
+    width: 10vmin;
+*/
+  /* INTRO TO TRANSFORMS */
+/*  margin-top: 50vh;
+  transform: translateY(-50%);
+*/
+  /*margin-top: 45vh;*/
+
+/*  transition: all 1.5s linear 0s;*/
+}
+
+/* INTRO TO TRANSITIONS */
+#example:hover {
+/*  background: rgb(255, 0, 255);*/
+/*  border-radius: 50%;*/
+/*  color: rgb(0, 255, 255);*/
+
+  /* SIZE CHANGES*/
+/*  height: 20vmin; width: 20vmin;*/
+
+   /*TRANSFORMATIONS */
+  /*transform: rotate(360deg);*/
+  /*transform: rotate3d(1,1,1, 360deg);*/
+}
+
+/* KEYFRAME ANIMATIONS */
+/* uncomment the rule on line 40 to use the keyframe animation */
+#example:hover {
+   /*animation: 2s ease 0s infinite pulse; */
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 rgb(253, 254, 0); }
+  50% { box-shadow: 0 0 3rem rgb(253, 254, 0); }
+  100% { box-shadow: 0 0 0 rgb(253, 254, 0); }
+}
