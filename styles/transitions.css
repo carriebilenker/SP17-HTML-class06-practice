@@ -6,46 +6,77 @@ body {
   color: rgb(255, 0, 255);
 }
 
-#example {
+main {
+  border-bottom: 0.5rem dashed #333;
+  height: 40vh;
+  margin: 0 auto;
+  position: relative;
+  width: 90vw;
+
+}
+
+.example {
   background: rgb(0, 255, 255);
   font-size: 2rem;
   margin: 0 auto;
   text-align: center;
 
-/*  height: 10vmin;
-    width: 10vmin;
-*/
-  /* INTRO TO TRANSFORMS */
-/*  margin-top: 50vh;
-  transform: translateY(-50%);
-*/
-  /*margin-top: 45vh;*/
+  height: 15vmin;
+  line-height: 15vmin;
+  width: 15vmin;
 
-/*  transition: all 1.5s linear 0s;*/
+  position: absolute;
+  bottom: 1%;
+  left: 10%;
+
+  /* Here's the Magic! */
+  /*transition: all 1s ease 0s;*/
 }
 
 /* INTRO TO TRANSITIONS */
-#example:hover {
-/*  background: rgb(255, 0, 255);*/
-/*  border-radius: 50%;*/
-/*  color: rgb(0, 255, 255);*/
+.example:hover {
+  /*background: rgb(255, 0, 255);*/
+  /*border-radius: 50%;*/
+  /*color: rgb(0, 255, 255);*/
 
   /* SIZE CHANGES*/
-/*  height: 20vmin; width: 20vmin;*/
+  /*height: 20vmin; width: 20vmin;*/
+
+  /* POSITION */
+  /*left: 40%;*/
 
    /*TRANSFORMATIONS */
   /*transform: rotate(360deg);*/
-  /*transform: rotate3d(1,1,1, 360deg);*/
+  /*transform: rotate3d(1, 1, 1, 360deg);*/
 }
 
 /* KEYFRAME ANIMATIONS */
-/* uncomment the rule on line 40 to use the keyframe animation */
-#example:hover {
-   /*animation: 2s ease 0s infinite pulse; */
+.example {
+  /*animation: walk 0.5s linear 0s infinite alternate,
+             move 6s linear 0.5s infinite alternate;*/
+}
+
+.example:hover {
+   /*animation: 1s ease-out 0s infinite pulse;*/
+}
+
+@keyframes move {
+  0% { left: 20%; bottom: 1%; }
+  100% { left: 80%; bottom: 1%; }
+}
+
+@keyframes walk {
+  from {
+    transform: rotate(-7deg);
+  }
+
+  to {
+    transform: rotate(7deg);
+  }
 }
 
 @keyframes pulse {
   0% { box-shadow: 0 0 0 rgb(253, 254, 0); }
-  50% { box-shadow: 0 0 3rem rgb(253, 254, 0); }
+  50% { box-shadow: 0 0 5rem rgb(253, 254, 0); }
   100% { box-shadow: 0 0 0 rgb(253, 254, 0); }
 }
