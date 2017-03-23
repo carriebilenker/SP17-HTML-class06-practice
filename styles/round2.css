@@ -51,10 +51,10 @@ body {
 }
 
 .circles li:nth-of-type(1n) { background-color: #29724B; transition-delay: 0s;}
-.circles li:nth-of-type(2n) { background-color: #9D1361; transition-delay: 0.2s;}
-.circles li:nth-of-type(3n) { background-color: #64186F; transition-delay: 0.4s;}
-.circles li:nth-of-type(4n) { background-color: #AA8E22; transition-delay: 0.6s;}
-.circles li:nth-of-type(5n) { background-color: #18586A; transition-delay: 0.8s;}
+.circles li:nth-of-type(2n) { background-color: #9D1361; transition-delay: 0.1s;}
+.circles li:nth-of-type(3n) { background-color: #64186F; transition-delay: 0.3s;}
+.circles li:nth-of-type(4n) { background-color: #AA8E22; transition-delay: 0.5s;}
+.circles li:nth-of-type(5n) { background-color: #18586A; transition-delay: 0.7s;}
 
 .example:hover + .circles li:nth-of-type(1) {
   transform: rotate(0deg) translate(40vmin);
