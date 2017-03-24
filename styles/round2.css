@@ -5,6 +5,7 @@ html { font: normal normal 16px/1.2 courier, monospace; }
 body {
   background-color: #000;
   color: rgb(255, 0, 255);
+  overflow: hidden;
 }
 
 .example {
